@@ -1,0 +1,30 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.element{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(88, 31, 121);
+    position: absolute;
+    top: 700px;
+    /* background-image: url(/img/png/Idle\ \(1\).png); */
+    background-size: cover;
+}
+body{
+    background-image: url(/img/Forest.jpg);
+    background-size: cover;
+    background-position:0 -50px;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+.moving-object{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: absolute;
+    /* right: 0; */
+    /* background-image: url(/img/png/Idle\ \(1\).png); */
+}
