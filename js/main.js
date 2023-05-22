@@ -17,8 +17,10 @@ document.body.addEventListener('keyup',(eventData)=>{
         
 });
 let dx=0;
+let y =700;
 function jumping(){
-    part.style.top=700-700*(Math.sin(Math.PI/180*dx))+"px";
+    y=700-700*(Math.sin(Math.PI/180*dx))
+    part.style.top=y+"px";
     dx++;
     if(dx==180) {
         dx=0;

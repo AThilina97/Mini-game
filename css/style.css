@@ -6,7 +6,7 @@
 .element{
     width: 150px;
     height: 150px;
-    background-color: rgb(88, 31, 121);
+    /* background-color: rgb(88, 31, 121); */
     position: absolute;
     top: 700px;
     /* background-image: url(/img/png/Idle\ \(1\).png); */
@@ -26,5 +26,12 @@ body{
     background-color: blue;
     position: absolute;
     /* right: 0; */
-    /* background-image: url(/img/png/Idle\ \(1\).png); */
+    background-image: url(/img/m2.png);
+    background-size: cover;
 }
+h2{
+    margin: 100px;
+    font-size: 50px;
+    color: antiquewhite;
+}
+
