@@ -1,4 +1,7 @@
-const scoretxt =document.querySelector('h2');
+const scoretxt =document.getElementById('score-count');
+const dropedTxt =document.getElementById('drop-count');
+const btnStart =document.getElementById('start-btn');
+const imgGameOver =document.getElementById('game-finish-img-container');
 
 class Object{
     obj;
@@ -21,6 +24,7 @@ class Object{
             this.Y=(window.innerHeight-100)*Math.random();
             this.X=window.innerWidth-100;
             this.obj.style.top=`${this.Y}px`;
+            drop();
         };
 
         if(right<=this.X+100 && (right+150)>=this.X+100 && y<=this.Y-50 && (y+150)>=this.Y-50){
@@ -40,13 +44,27 @@ function add(){
     score++;
     scoretxt.innerHTML=`Score : ${score}` ;
 }
+let dropCount=0;
+function drop(){
+    dropCount++;
+    dropedTxt.innerHTML=`Dropped : ${dropCount}` ;
+    if(dropCount==5){
+        clearInterval(tmrInterval);
+        imgGameOver.style.backgroundImage=`url('/img/game-over.png')`;
+
+    }
+}
+
 const elm1=new Object();
 const elm2=new Object();
 const elm3=new Object();
 
-setInterval(() => {
-    elm1.moving(score);
-    elm2.moving(score);
-    elm3.moving(score);
+
+
+
+const tmrInterval=setInterval(() => {
+    elm1.moving();
+    elm2.moving();
+    elm3.moving();
   
 }, 10);

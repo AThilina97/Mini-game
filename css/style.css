@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    font-family: Ubuntu ,sans-serif;
 }
 
 .element{
@@ -28,10 +29,44 @@ body{
     /* right: 0; */
     background-image: url(/img/m2.png);
     background-size: cover;
+    z-index: -1;
 }
-h2{
-    margin: 100px;
+#score-count{
+    margin: 20px 100px 0 ;
     font-size: 50px;
-    color: antiquewhite;
+    color: rgb(16, 235, 243);
 }
+#drop-count{
+    margin: 0px 100px;
+    font-size: 50px;
+    color: red;
+}
+#start-btn{
+    width: 150px;
+    height: 80px;
+    font-size: 2rem;
+    background-color: rgb(27, 53, 10);
+    border: none;
+    border-radius: 10px;
+    transform: rotate(360deg);
+    color: white;
+    position: absolute;
+    top: 5vh;
+    right: 2vw;
+    opacity: 0.8;
+}
+#start-btn:hover{
+    opacity: 1;
+}
+#game-finish-img-container{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    left: 550px;
+    left: 550px;
+    background-size: cover;
+    opacity: 0.9;
+
+}
+
 
