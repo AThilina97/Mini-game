@@ -1,6 +1,7 @@
 const scoretxt =document.getElementById('score-count');
 const dropedTxt =document.getElementById('drop-count');
 const btnStart =document.getElementById('start-btn');
+const btnRestart =document.getElementById('restart-btn');
 const imgGameOver =document.getElementById('game-finish-img-container');
 
 class Object{
@@ -50,7 +51,11 @@ function drop(){
     dropedTxt.innerHTML=`Dropped : ${dropCount}` ;
     if(dropCount==5){
         clearInterval(tmrInterval);
+        tmrInterval=null;
         imgGameOver.style.backgroundImage=`url('/img/game-over.png')`;
+        btnRestart.style.display="block";
+        imgGameOver.style.display="block";
+        dropCount=0;
 
     }
 }
@@ -59,12 +64,26 @@ const elm1=new Object();
 const elm2=new Object();
 const elm3=new Object();
 
+btnStart.addEventListener('click',(eventData)=>{
+    start();
+});
+btnRestart.addEventListener('click',(eventData)=>{
+    score=0;
+    start();
+    scoretxt.innerHTML=`Score : 0` ;
+    dropedTxt.innerHTML=`Dropped : 0` ;
+});
+let tmrInterval=null;
+function start(){
+    tmrInterval=setInterval(() => {
+        elm1.moving();
+        elm2.moving();
+        elm3.moving();
+      
+    }, 10);
+    btnStart.style.display="none";
+    btnRestart.style.display="none";
+    imgGameOver.style.display="none";
 
+};
 
-
-const tmrInterval=setInterval(() => {
-    elm1.moving();
-    elm2.moving();
-    elm3.moving();
-  
-}, 10);

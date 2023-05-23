@@ -24,11 +24,12 @@ body{
 .moving-object{
     width: 100px;
     height: 100px;
-    background-color: blue;
+    /* background-color: blue; */
     position: absolute;
     /* right: 0; */
     background-image: url(/img/m2.png);
-    background-size: cover;
+    background-size: 100px;
+    background-repeat:no-repeat;
     z-index: -1;
 }
 #score-count{
@@ -52,10 +53,28 @@ body{
     color: white;
     position: absolute;
     top: 5vh;
-    right: 2vw;
+    left: 20vw;
     opacity: 0.8;
 }
 #start-btn:hover{
+    opacity: 1;
+}
+#restart-btn{
+    width: 180px;
+    height: 80px;
+    font-size: 2rem;
+    background-color: rgb(27, 53, 10);
+    border: none;
+    border-radius: 10px;
+    transform: rotate(360deg);
+    color: white;
+    position: absolute;
+    top: 68vh;
+    right: 20vw;
+    opacity: 0.8;
+    display:none;
+}
+#restart-btn:hover{
     opacity: 1;
 }
 #game-finish-img-container{
