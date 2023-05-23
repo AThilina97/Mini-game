@@ -3,6 +3,7 @@ const dropedTxt =document.getElementById('drop-count');
 const btnStart =document.getElementById('start-btn');
 const btnRestart =document.getElementById('restart-btn');
 const imgGameOver =document.getElementById('game-finish-img-container');
+const imgGameStart =document.getElementById('game-start-img-container');
 
 class Object{
     obj;
@@ -84,6 +85,7 @@ function start(){
     btnStart.style.display="none";
     btnRestart.style.display="none";
     imgGameOver.style.display="none";
+    imgGameStart.style.display="none";
 
 };
 

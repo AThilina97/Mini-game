@@ -52,8 +52,8 @@ body{
     transform: rotate(360deg);
     color: white;
     position: absolute;
-    top: 5vh;
-    left: 20vw;
+    top: 68vh;
+    right: 20vw;
     opacity: 0.8;
 }
 #start-btn:hover{
@@ -87,5 +87,15 @@ body{
     opacity: 0.9;
 
 }
+#game-start-img-container{
+    width: 800px;
+    height: 600px;
+    position: absolute;
+    left: 550px;
+    left: 550px;
+    background-size: cover;
+    opacity: 0.9;
+    background-image:url(/img/start.png);
+} 
 
 
