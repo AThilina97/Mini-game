@@ -53,7 +53,7 @@ function drop(){
     if(dropCount==10){
         clearInterval(tmrInterval);
         tmrInterval=null;
-        imgGameOver.style.backgroundImage=`url('/img/game-over.png')`;
+        imgGameOver.style.backgroundImage=`url('../img/game-over.png')`;
         btnRestart.style.display="block";
         imgGameOver.style.display="block";
         dropCount=0;
