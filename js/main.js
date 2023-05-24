@@ -90,11 +90,9 @@ setInterval(() => {
         if(state===0){
             part.style.transform='scaleX(-1)';
             state=1;
-
         }
         if(l>=10) l=0;
         l++;
-
     }
     
 }, 50);

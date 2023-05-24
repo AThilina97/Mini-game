@@ -50,7 +50,7 @@ let dropCount=0;
 function drop(){
     dropCount++;
     dropedTxt.innerHTML=`Dropped : ${dropCount}` ;
-    if(dropCount==5){
+    if(dropCount==10){
         clearInterval(tmrInterval);
         tmrInterval=null;
         imgGameOver.style.backgroundImage=`url('/img/game-over.png')`;
