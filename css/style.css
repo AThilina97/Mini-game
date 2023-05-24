@@ -14,7 +14,7 @@
     background-size: cover;
 }
 body{
-    background-image: url(/img/Forest.jpg);
+    background-image: url(../img/Forest.jpg);
     background-size: cover;
     background-position:0 -50px;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@ body{
     /* background-color: blue; */
     position: absolute;
     /* right: 0; */
-    background-image: url(/img/m2.png);
+    background-image: url(../img/m2.png);
     background-size: 100px;
     background-repeat:no-repeat;
     z-index: -1;
@@ -95,7 +95,7 @@ body{
     left: 550px;
     background-size: cover;
     opacity: 0.9;
-    background-image:url(/img/start.png);
+    background-image:url(../img/start.png);
 } 
 
 
