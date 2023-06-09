@@ -5,7 +5,7 @@ The 2D Mini-Game is a web-based game developed using HTML, CSS, and JavaScript. 
 
 ## Game Description
 
-In this game 'Dino' Can go both left and right direction and also jump using arrow keys and space key.Pieces of meats are comming from right side with different velocities and Dino have to catch them and scored up with that.Dropped count is increased with piece of meat go to left side of screan.Game over when dropped count is equal to the '10'.
+In this game 'Dino' Can go both left and right direction and also jump using arrow keys and space key.Pieces of meats are comming from right side with different velocities and Dino have to catch them and scored up with that.Dropped count is increased when pieces of meats are going to left side of screan.Game is over when dropped count is equal to the '10'.
 
 ## Technologies Used
 
